@@ -2,15 +2,16 @@ package main
 
 import (
 	"fmt"
-	"gotest/databasehandling"
-	"gotest/httphandling"
+	"testgo/databasehandling"
+	"testgo/httphandling"
 )
 
 func main() {
 	fmt.Println("Hello, Main!")
 	maintest()
-	httphandling.PrintHTTPtestMessage()
 	databasehandling.PrintDBtestMessage()
+
+	httphandling.CreateHTTPListener()
 }
 
 func maintest() {

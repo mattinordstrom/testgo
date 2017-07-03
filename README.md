@@ -4,7 +4,7 @@ git clone ...
 
 export GOPATH="$HOME/go"
 
-cd $HOME/go/bin && go install gotest && ./gotest
+cd $HOME/go/bin && go install testgo && ./testgo
 
 
 
